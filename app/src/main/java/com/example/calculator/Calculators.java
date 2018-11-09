@@ -1,16 +1,18 @@
 package com.example.calculator;
+
 import android.util.Log;
+
 import java.util.Stack;
 
 import static java.lang.Math.sqrt;
+
 public class Calculators {
     public static double evaluateExpression(String expression){
-        Log.d(expression, "evaluateExpression: ");
+        Log.d(expression,"evaluateExpression:");
         Stack<Double> operandStack = new Stack<Double>();
         Stack<Character> operatorStack = new Stack<Character>();
         expression = insertBlanks(expression);
         String[] tokens = expression.split(" ");
-
 
         for (String token : tokens) {
             if (token.length() == 0){
@@ -109,5 +111,8 @@ public class Calculators {
         }
         Log.d(result, "insertBlanks: ");
         return result;
+
+
     }
+
 }
