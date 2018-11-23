@@ -37,10 +37,14 @@
             android:text="Back"
             android:background="#ff5151" />
     </LinearLayout>
-
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0dp">
         <Button
             android:id="@+id/sin"
-            android:visibility="gone"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -50,8 +54,6 @@
         <Button
             android:id="@+id/cos"
             android:layout_width="0dip"
-            android:visibility="gone"
-
             android:layout_height="match_parent"
             android:textAllCaps="false"
             android:layout_weight="1"
@@ -60,8 +62,6 @@
         <Button
             android:id="@+id/x2"
             android:layout_width="0dip"
-            android:visibility="gone"
-
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textAllCaps="false"
@@ -70,14 +70,12 @@
         <Button
             android:id="@+id/x3"
             android:layout_width="0dip"
-            android:visibility="gone"
-
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textAllCaps="false"
             android:text="x³"
             />
-
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
